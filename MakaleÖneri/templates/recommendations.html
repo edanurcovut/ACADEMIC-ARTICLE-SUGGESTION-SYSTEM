@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makale Önerileri</title>
+</head>
+<body>
+    <h1>Hoş Geldiniz!</h1>
+    <p>Burada size önerilen makaleleri bulabilirsiniz.</p>
+
+    <h2>Makale Önerileri</h2>
+    <ul>
+        <li>Makale 1</li>
+        <li>Makale 2</li>
+        <li>Makale 3</li>
+        <!-- Buraya makale önerilerini dinamik olarak ekleyebilirsiniz -->
+    </ul>
+
+    <h2>Makale Ara</h2>
+    <form method="GET" action="/search">
+        <label for="search_query">Arama:</label>
+        <input type="text" id="search_query" name="query" placeholder="Makale adı veya anahtar kelime"><br><br>
+
+        <label for="filter">Filtrele:</label>
+        <select id="filter" name="filter">
+            <option value="all">Hepsi</option>
+            <option value="computer_science">Bilgisayar Bilimleri</option>
+            <option value="physics">Fizik</option>
+            <option value="biology">Biyoloji</option>
+            <option value="chemistry">Kimya</option>
+        </select><br><br>
+
+        <input type="submit" value="Ara">
+    </form>
+</body>
+</html>
